@@ -1,0 +1,32 @@
+ESP32-CAM to Arduino Uno (Programming and Runtime)
+ESP32-CAM 5V -> Uno 5V
+ESP32-CAM GND -> Uno GND
+ESP32-CAM U0T (TX) -> Uno RX (Pin 0)
+ESP32-CAM U0R (RX) -> Uno TX (Pin 1)
+ESP32-CAM GPIO0 -> Uno GND (for programming; remove after upload)
+ESP32-CAM EN (Reset) -> Uno 3.3V (or toggle to GND momentarily for reset)
+
+
+Arduino Uno to Arduino Mega (Runtime)
+Uno TX (Pin 1) -> Mega RX1 (Pin 19)
+Uno RX (Pin 0) -> Mega TX1 (Pin 18)
+Uno GND -> Mega GND
+Arduino Mega to 1.8" TFT SPI (128x160)
+TFT VCC -> Mega 5V
+TFT GND -> Mega GND
+TFT CS -> Mega Pin 48
+TFT RESET -> Mega Pin 46
+TFT A0 -> Mega Pin 44
+TFT SDA -> Mega Pin 51 (MOSI)
+TFT SCK -> Mega Pin 52 (SCK)
+TFT LED -> Mega Pin 9 (PWM for brightness)
+
+
+Arduino Mega to Motors
+28BYJ-48 (5V) IN1-IN4 -> Mega Pins 22, 24, 26, 28
+28BYJ-48 (12V) IN1-IN4 -> Mega Pins 30, 32, 34, 36
+20kg Servo Signal -> Mega Pin 10
+All motors GND -> Mega GND
+28BYJ-48 (5V) VCC -> External 5V
+28BYJ-48 (12V) VCC -> External 12V
+20kg Servo VCC -> External 5V
