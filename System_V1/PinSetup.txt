@@ -30,3 +30,34 @@ All motors GND -> Mega GND
 28BYJ-48 (5V) VCC -> External 5V
 28BYJ-48 (12V) VCC -> External 12V
 20kg Servo VCC -> External 5V
+
+
+
+
+
+
+
+
+
+
+
+INSTRUCTIONS:
+ESP32-CAM (CameraWebServer.ino):
+Connect the ESP32-CAM to the Uno as per the pin setup (GPIO0 to GND for programming).
+In Arduino IDE:
+Board: AI Thinker ESP32-CAM
+Port: Uno’s COM port
+Upload Speed: 921600
+Upload the code, reset the ESP32-CAM (toggle EN to GND then back to 3.3V) during upload if needed.
+Disconnect GPIO0 from GND after upload.
+Arduino Uno (CommunicationBridge.ino):
+Disconnect the ESP32-CAM from Uno’s RX/TX pins to avoid interference.
+In Arduino IDE:
+Board: Arduino Uno
+Port: Uno’s COM port
+Upload the code, then reconnect the ESP32-CAM for runtime.
+Arduino Mega (MotorControlTFT.ino):
+In Arduino IDE:
+Board: Arduino Mega or Mega 2560
+Port: Mega’s COM port
+Upload the code.
