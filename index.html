@@ -53,10 +53,10 @@
         /* Sidebar */
         .sidebar {
             width: 0;
-            height: 100vh;
+            height: 108vh;
             background: #F8F8F8; /* Almost white */
             position: fixed;
-            top: 0;
+            top: -8%;
             right: 0;
             padding-top: 60px;
             transition: 0.3s ease;
@@ -106,7 +106,9 @@
 
         .submenu {
             display: none;
-            padding-left: 20px;
+            padding-left: 10%;
+            padding-right: 10%;
+            padding-top: 10%;
         }
 
         .submenu input,
@@ -390,7 +392,7 @@
     <!-- Sidebar -->
     <div class="sidebar" id="sidebar">
         <div class="hamburger" onclick="toggleSidebar()">✖</div>
-        <div class="menu-item" onclick="toggleSubmenu('admin')">Admin ⚙</div>
+        <div class="menu-item" onclick="toggleSubmenu('admin')">Configuration and Monitor ⚙</div>
         <div class="submenu" id="admin-submenu">
             <input type="password" id="admin-pass" placeholder="Enter Password">
             <button onclick="checkPassword()">Submit</button>
